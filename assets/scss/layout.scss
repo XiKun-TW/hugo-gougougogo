@@ -1,0 +1,39 @@
+.content {
+    margin: 0 auto;
+    padding: 0 3%;
+    margin-top: 6rem;
+    min-height: calc(100vh - 13rem);
+    max-width: 62.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top:  2rem;
+    padding: 2rem 2rem 1rem;
+    color: $font-color-t1;
+    font-family: sans-serif;
+    font-size: .75rem;
+
+    border-top: 1px solid $bg-t2;
+
+    .info__site {
+        color: $font-color-t1;
+    }
+
+    .info__powerby {
+        color: $font-color-t1;
+    }
+
+    a {
+        color: $font-color-t1;
+    }
+}
+
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}

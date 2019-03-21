@@ -1,0 +1,20 @@
+<footer class="footer">
+    {{ $style := resources.Get "css/ocean.css" }}
+    {{ $js := resources.Get "js/highlight.pack.js" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+    <script src="{{ $js.Permalink }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
+    <span class="info__site">
+        © 2018 <a href="http://kevinxi.me/">By Kevin Xi</a>|
+    </span>
+    <span class="info__powerby">
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a> and <a rel="nofollow noreferer noopener" href="https://ox-hugo.scripter.co" target="_blank">ox-hugo</a> 
+    </span>
+</footer>
